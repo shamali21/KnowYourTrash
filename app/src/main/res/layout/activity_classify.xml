@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classify"
+    android:id="@+id/classifyLayout">
+
+    <ImageView
+        android:id="@+id/selected_image"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/selected_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/classify_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selected_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:text="Classify" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classify_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:text="Back" />
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="402dp"-->
+            <!--android:layout_height="55dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/lableText"-->
+                <!--android:layout_width="203dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Garbage Type"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/ConfidenceText"-->
+                <!--android:layout_width="139dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Confidence"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/back_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/Confidence1"-->
+        <!--android:layout_width="196dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text=""-->
+        <!--android:textSize="18sp" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>
